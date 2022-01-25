@@ -13,6 +13,9 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
     res.status(200).json("<h3>About Page</h3>");
   });
+app.get("/contact", (req, res) => {
+    res.status(200).json("<h3>Contact Page</h3>");
+  });
   
 module.exports = app.listen(PORT, () =>
     console.log(`Running on port ${PORT}`)
